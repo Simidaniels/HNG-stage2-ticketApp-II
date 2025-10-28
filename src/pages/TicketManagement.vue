@@ -20,8 +20,7 @@
 <script setup>
 import { ref } from 'vue'
 import TicketCard from '@/components/TicketCard.vue'
-import TicketService from '@/services/TicketService.js'
-
+import TicketService from '../services/TicketServices.js'
 
 const tickets = ref(TicketService.getAll())
 const newTicket = ref({ title: '', description: '', status: 'open' })
